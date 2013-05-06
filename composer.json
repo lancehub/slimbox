@@ -1,0 +1,12 @@
+{
+	"require": {
+		"slim/slim":"dev-develop",
+		"php-activerecord/php-activerecord":"dev-master"
+	},
+	"autoload": {
+		"psr-0": {
+			"Controller": "app/",
+			"Model": "app/"
+		}
+	}
+}
