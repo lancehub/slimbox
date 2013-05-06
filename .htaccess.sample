@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^index.php/(.*) /$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]

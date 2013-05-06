@@ -1,0 +1,11 @@
+<?php
+
+$config = array(
+	'db'=>array(
+			'host'=>'localhost',
+			'user'=>'dbuser',
+			'pass'=>'',
+			'db_name'=>'slimbox'
+		),
+	'timezone'=>'CET',
+);
