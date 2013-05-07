@@ -59,7 +59,11 @@ function include_js($js){
 }
 
 function echo_static($str = '',$with_domain = false){
-	echo get_root($with_domain).'/public/'.$str;
+	echo_path('/public/'.$str, $with_domain);
+}
+
+function echo_path($path,$with_domain = false){
+	echo get_path($path,$with_domain);
 }
 
 

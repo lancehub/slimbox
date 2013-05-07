@@ -40,6 +40,11 @@ function get_config($key = ''){
 
 /********************* Path Related ***********************/
 
+function redirect($path){
+	$app = get_app();
+	$app->redirect($path);
+}
+
 function get_root($with_domain = false){
 	$app = get_app();
 	$path = $app->request()->getRootUri();
@@ -55,11 +60,6 @@ function get_root($with_domain = false){
 function get_current_path(){
 	$app = get_app();
 	return $app->request()->getResourceUri();
-}
-
-function redirect($path){
-	$app = get_app();
-	$app->redirect($path);
 }
 
 function get_path($path,$with_domain = false){
