@@ -1,4 +1,4 @@
 slimbox
 =======
 
-php framework based on slim and php active record
+php framework based on slim, php active record and bootstrap
