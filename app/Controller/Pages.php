@@ -1,9 +1,10 @@
 <?php
 namespace Controller;
 
-class Pages{
+class Pages
+{
 	
 	static function index(){
-		echo 'index';
+		render('pages/index.php');
 	}
 }
