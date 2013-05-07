@@ -23,12 +23,7 @@ function render($template,$data = array()){
 
 function get_layout(){
 	$layout = get_config('use_layout');
-	if(empty($layout)){
-		$layout = 'default.php';
-	}else{
-		$layout = $layout.'.php';
-	}
-	return $layout;
+	return $layout?$layout:'default.php';
 }
 
 function get_block($template,$data = array()){
@@ -58,10 +53,6 @@ function include_js($js){
 	echo '<script src="'.get_root().'/public/js/'.$js.'.js"></script>'."\r\n";
 }
 
-function echo_static($str = '',$with_domain = false){
-	echo_path('/public/'.$str, $with_domain);
-}
-
 function echo_path($path,$with_domain = false){
 	echo get_path($path,$with_domain);
 }
@@ -86,6 +77,5 @@ function get_post($field,$default = ''){
 }
 
 function echo_post($field,$default = ''){
-	$value = get_post($field,$default);
-	echo $value;
+	echo get_post($field,$default);
 }

@@ -57,13 +57,14 @@ function get_root($with_domain = false){
 	}
 }
 
+function get_path($path,$with_domain = false){
+	return get_root($with_domain).$path;
+}
+
+
 function get_current_path(){
 	$app = get_app();
 	return $app->request()->getResourceUri();
-}
-
-function get_path($path,$with_domain = false){
-	return get_root($with_domain).$path;
 }
 
 /********************* Model Related ***********************/
