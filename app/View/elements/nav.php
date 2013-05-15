@@ -6,11 +6,11 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="brand" href="<?php echo_path('/') ?>">Project name</a>
+			<a class="brand" href="<?php echo get_path('/') ?>">Project name</a>
 			<div class="nav-collapse collapse">
 			<ul class="nav">
-				<li class="active"><a href="<?php echo_path('/') ?>">Home</a></li>
-				<li><a href="<?php echo_path('/about') ?>">About</a></li>
+				<li class="active"><a href="<?php echo get_path('/') ?>">Home</a></li>
+				<li><a href="<?php echo get_path('/about') ?>">About</a></li>
 			</ul>
 			</div><!--/.nav-collapse -->
 		</div>
