@@ -53,11 +53,6 @@ function include_js($js){
 	echo '<script src="'.get_root().'/public/js/'.$js.'.js"></script>'."\r\n";
 }
 
-function echo_path($path,$with_domain = false){
-	echo get_path($path,$with_domain);
-}
-
-
 /********************* POST Related ***********************/
 
 function is_post(){
@@ -74,8 +69,4 @@ function get_post($field,$default = ''){
 	else{
 		return $value;
 	}
-}
-
-function echo_post($field,$default = ''){
-	echo get_post($field,$default);
 }
