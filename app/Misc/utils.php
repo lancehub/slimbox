@@ -38,6 +38,15 @@ function get_config($key = ''){
 	}
 }
 
+/***********make class instance and call function***********/
+
+function instance($class, $method){
+	return function() use ($class, $method){
+		return call_user_func_array(array(new $class(), $method), func_get_args());
+	};
+}
+
+
 /********************* Path Related ***********************/
 
 function redirect($path){

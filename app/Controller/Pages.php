@@ -3,8 +3,10 @@ namespace Controller;
 
 class Pages
 {
-	
-	static function index(){
+	function __construct(){
+	}
+
+	function index(){
 		render('pages/index.php');
 	}
 }

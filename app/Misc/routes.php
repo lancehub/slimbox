@@ -4,7 +4,7 @@
 	'id' => '\d*',
 ));
 
-$app->get('/',array('\Controller\Pages','index'))->name('home');
+$app->get('/',instance('\Controller\Pages','index'))->name('home');
 
 $app->get('/noop',function(){
 	echo 'Nothing happen!'."\r\n";
